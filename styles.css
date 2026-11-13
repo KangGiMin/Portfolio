@@ -131,7 +131,7 @@ ul {
 }
 .mono {
   font-family: Consolas, "SFMono-Regular", "Liberation Mono", monospace;
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 1.2px;
   line-height: 1.5;
 }
@@ -211,7 +211,7 @@ ul {
 .wordmark-caption {
   font-family: Consolas, monospace;
   font-weight: 400;
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 1.3px;
   margin-left: 15px;
   color: var(--muted);
@@ -308,7 +308,7 @@ ul {
   align-items: center;
   gap: 10px;
   font-family: Consolas, "SFMono-Regular", monospace;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: 1.6px;
   line-height: 1.5;
@@ -427,7 +427,7 @@ h1 {
   display: flex;
   gap: 14px;
   margin-top: 31px;
-  font-size: 10px;
+  font-size: 12px;
   color: var(--muted);
 }
 .hero-tags span + span:before {
@@ -462,7 +462,7 @@ h1 {
   top: 23px;
 }
 .art-topline .mono {
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 1px;
 }
 .art-spark {
@@ -473,7 +473,7 @@ h1 {
   bottom: 23px;
 }
 .art-bottomline .mono {
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: 1px;
 }
 .orbit {
@@ -498,7 +498,7 @@ h1 {
   right: 25px;
   border: 1px solid var(--line);
   background: var(--bg);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 550;
   padding: 7px 12px;
   border-radius: 20px;
@@ -535,7 +535,7 @@ h1 {
   justify-content: space-between;
   padding: 0 17px;
   font-family: Consolas, monospace;
-  font-size: 10px;
+  font-size: 12px;
   color: #afc9e8;
   border-bottom: 1px solid #ffffff15;
 }
@@ -583,7 +583,7 @@ h1 {
 }
 .code-comment {
   color: #a0bad7;
-  font-size: 10px;
+  font-size: 12px;
   margin-top: 8px;
 }
 .flow-card {
@@ -621,7 +621,7 @@ h1 {
 .flow-card div > span {
   display: block;
   font-family: Consolas, monospace;
-  font-size: 9px;
+  font-size: 11px;
   color: var(--muted);
   margin-top: 3px;
 }
@@ -652,12 +652,12 @@ h1 {
   margin-top: -36px;
 }
 .hero-bottom .mono {
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 1px;
 }
 .scroll-cue {
   font-family: Consolas, monospace;
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: 1px;
   display: flex;
   gap: 20px;
@@ -674,7 +674,7 @@ h1 {
   color: var(--accent);
 }
 .section-label .mono {
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 1.2px;
   flex-shrink: 0;
 }
@@ -684,7 +684,7 @@ h1 {
   flex: 1;
 }
 .small-note {
-  font-size: 10px;
+  font-size: 12px;
   color: var(--muted);
 }
 h2 {
@@ -730,7 +730,7 @@ h2 {
   display: inline-block;
   font-family: Consolas, monospace;
   color: var(--accent);
-  font-size: 10px;
+  font-size: 12px;
   margin-bottom: 10px;
 }
 .principles strong {
@@ -739,7 +739,7 @@ h2 {
   font-weight: 650;
 }
 .principles p {
-  font-size: 11px;
+  font-size: 12px;
   color: var(--muted);
   line-height: 1.8;
   margin-top: 8px;
@@ -797,7 +797,7 @@ h2 {
   border-radius: 6px;
 }
 .stack-top .mono {
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: 0.4px;
   color: var(--muted);
 }
@@ -808,7 +808,7 @@ h2 {
   font-weight: 650;
 }
 .stack-card > p {
-  font-size: 11px;
+  font-size: 12px;
   color: var(--muted);
   margin: 7px 0 23px;
 }
@@ -823,7 +823,7 @@ h2 {
   border: 1px solid var(--line);
   border-radius: 4px;
   font-family: Pretendard, sans-serif;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 500;
   line-height: 1.5;
   white-space: nowrap;
@@ -836,19 +836,19 @@ h2 {
   color: var(--muted);
 }
 .exploring > .mono {
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: 1px;
   flex-shrink: 0;
 }
 .exploring p {
-  font-size: 11px;
+  font-size: 12px;
 }
 .exploring p span {
   padding: 0 9px;
   opacity: 0.5;
 }
 .exploring-note {
-  font-size: 9px;
+  font-size: 11px;
   margin-left: auto;
 }
 .projects {
@@ -867,7 +867,7 @@ h2 {
   flex-wrap: wrap;
 }
 .filter {
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.4;
   padding: 10px 14px;
   border: 1px solid var(--line);
@@ -884,12 +884,12 @@ h2 {
 }
 .filter span {
   font-family: Consolas, monospace;
-  font-size: 9px;
+  font-size: 11px;
   margin-left: 6px;
   opacity: 0.7;
 }
 .project-count {
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 1px;
   color: var(--muted);
   flex-shrink: 0;
@@ -934,12 +934,12 @@ h2 {
   margin-bottom: 16px;
 }
 .project-meta .mono {
-  font-size: 8px;
+  font-size: 10px;
   color: var(--accent);
   letter-spacing: 1px;
 }
 .project-type {
-  font-size: 9px;
+  font-size: 11px;
   color: var(--muted);
   background: var(--tag);
   padding: 3px 8px;
@@ -975,11 +975,11 @@ h2 {
   margin: 22px 0;
 }
 .contribution > span {
-  font-size: 9px;
+  font-size: 11px;
   color: var(--muted);
 }
 .contribution > p {
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.8;
 }
 .project-info > .tech-tags {
@@ -995,14 +995,14 @@ h2 {
   margin-top: auto;
 }
 .project-links .text-link {
-  font-size: 11px;
+  font-size: 12px;
 }
 .repo-link {
   display: flex;
   align-items: center;
   gap: 6px;
   font-family: Consolas, monospace;
-  font-size: 10px;
+  font-size: 12px;
   color: var(--muted);
 }
 .repo-link .icon {
@@ -1031,7 +1031,7 @@ h2 {
   position: absolute;
   top: 25px;
   left: 26px;
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 1px;
   z-index: 3;
 }
@@ -1107,7 +1107,7 @@ h2 {
   background: #fff;
   color: #52657b;
   font-family: Consolas, Pretendard, monospace;
-  font-size: 7px;
+  font-size: 10px;
   line-height: 1.4;
 }
 .browser-toolbar .window-dots {
@@ -1125,7 +1125,7 @@ h2 {
   position: absolute;
   bottom: 26px;
   left: 28px;
-  font-size: 10px;
+  font-size: 12px;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -1207,7 +1207,7 @@ h2 {
   margin: 36px auto 0;
   padding: 10px;
   width: fit-content;
-  font-size: 11px;
+  font-size: 12px;
   color: var(--muted);
 }
 .all-repos .icon {
@@ -1270,13 +1270,13 @@ h2 {
   margin-bottom: 12px;
 }
 .timeline-meta .mono {
-  font-size: 10px;
+  font-size: 12px;
   color: var(--muted);
   letter-spacing: 0.4px;
 }
 .current-label,
 .completed-label {
-  font-size: 9px;
+  font-size: 11px;
   line-height: 1.5;
   padding: 2px 7px;
   border-radius: 3px;
@@ -1300,7 +1300,7 @@ h2 {
 .timeline-kind {
   display: block;
   font-family: Consolas, monospace;
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: 1.3px;
   color: var(--muted);
   margin-top: 15px;
@@ -1318,7 +1318,7 @@ h2 {
 }
 .contact .eyebrow {
   color: var(--accent);
-  font-size: 9px;
+  font-size: 11px;
   margin-bottom: 21px;
 }
 .contact .status-dot {
@@ -1387,7 +1387,7 @@ h2 {
   font-size: 26px;
 }
 .footer p {
-  font-size: 9px;
+  font-size: 11px;
   color: var(--muted);
   letter-spacing: 0.2px;
 }
@@ -1396,7 +1396,7 @@ h2 {
   align-items: center;
   gap: 18px;
   font-family: Consolas, monospace;
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: 1px;
   color: var(--muted);
 }
@@ -1433,7 +1433,7 @@ h2 {
   border-bottom: 1px solid var(--line);
 }
 .dialog-top > .mono {
-  font-size: 9px;
+  font-size: 11px;
   color: var(--muted);
 }
 .dialog-close {
@@ -1444,7 +1444,7 @@ h2 {
   padding: 31px 35px 38px;
 }
 .dialog-heading > .eyebrow {
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 1px;
   margin-bottom: 11px;
 }
@@ -1507,7 +1507,7 @@ h2 {
   line-height: 1.8;
 }
 .architecture b {
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 400;
   color: var(--muted);
 }
@@ -1527,7 +1527,7 @@ h2 {
   font-weight: 600;
 }
 .verification-note p {
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.9;
   margin-top: 7px;
   color: var(--muted);
@@ -1588,7 +1588,7 @@ h2 {
   }
   .hero-tags {
     gap: 9px;
-    font-size: 9px;
+    font-size: 11px;
   }
   .hero-tags span + span:before {
     margin-right: 9px;
@@ -1598,7 +1598,7 @@ h2 {
     right: 20px;
   }
   .code-body {
-    font-size: 11px;
+    font-size: 12px;
     padding-left: 18px;
     padding-right: 15px;
   }
@@ -1614,7 +1614,7 @@ h2 {
     padding: 20px 16px 24px;
   }
   .stack-top .mono {
-    font-size: 7px;
+    font-size: 10px;
   }
   .stack-card h3 {
     font-size: 16px;
@@ -1632,10 +1632,10 @@ h2 {
     padding: 70px 20px;
   }
   .small-note {
-    font-size: 9px;
+    font-size: 11px;
   }
   .project-type {
-    font-size: 8px;
+    font-size: 10px;
   }
   .project-meta {
     gap: 8px;
@@ -1682,7 +1682,7 @@ h2 {
     right: 17px;
   }
   .art-topline .mono {
-    font-size: 7px;
+    font-size: 10px;
   }
   .art-spark {
     font-size: 28px;
@@ -1693,17 +1693,17 @@ h2 {
     right: 13px;
   }
   .code-body {
-    font-size: 9px;
+    font-size: 11px;
     padding: 15px 13px;
     line-height: 2;
   }
   .code-comment {
-    font-size: 8px;
+    font-size: 10px;
   }
   .window-bar {
     height: 33px;
     padding-inline: 11px;
-    font-size: 8px;
+    font-size: 10px;
   }
   .flow-card {
     bottom: 40px;
@@ -1712,10 +1712,10 @@ h2 {
     padding: 11px;
   }
   .flow-card strong {
-    font-size: 10px;
+    font-size: 12px;
   }
   .flow-card div > span {
-    font-size: 7px;
+    font-size: 10px;
   }
   .flow-card b {
     margin-inline: 1px;
@@ -1731,7 +1731,7 @@ h2 {
     display: none;
   }
   .art-sticker {
-    font-size: 8px;
+    font-size: 10px;
     top: 80px;
     right: 16px;
   }
@@ -1739,7 +1739,7 @@ h2 {
     bottom: 17px;
   }
   .art-bottomline .mono {
-    font-size: 7px;
+    font-size: 10px;
   }
   .hero-actions {
     flex-wrap: wrap;
@@ -1747,17 +1747,17 @@ h2 {
   }
   .hero-actions .button {
     gap: 15px;
-    font-size: 11px;
+    font-size: 12px;
     padding-inline: 15px;
   }
   .hero-actions .text-link {
-    font-size: 10px;
+    font-size: 12px;
     gap: 10px;
   }
   .hero-tags {
     flex-wrap: wrap;
     gap: 3px 8px;
-    font-size: 8px;
+    font-size: 10px;
     margin-top: 22px;
   }
   .section {
@@ -1767,7 +1767,7 @@ h2 {
     margin-bottom: 32px;
   }
   .section-label .mono {
-    font-size: 9px;
+    font-size: 11px;
   }
   .about-layout,
   .journey-layout {
@@ -1781,13 +1781,13 @@ h2 {
     gap: 15px;
   }
   .principles p {
-    font-size: 10px;
+    font-size: 12px;
   }
   .principles strong {
-    font-size: 11px;
+    font-size: 12px;
   }
   .section-heading > p {
-    font-size: 11px;
+    font-size: 12px;
   }
   .stack-grid {
     grid-template-columns: 1fr 1fr;
@@ -1806,7 +1806,7 @@ h2 {
     margin-bottom: 18px;
   }
   .stack-top .mono {
-    font-size: 9px;
+    font-size: 11px;
   }
   .stack-card h3 {
     font-size: 18px;
@@ -1839,10 +1839,10 @@ h2 {
     font-size: 12px;
   }
   .project-description {
-    font-size: 11px;
+    font-size: 12px;
   }
   .contribution p {
-    font-size: 10px;
+    font-size: 12px;
   }
   .project-visual {
     height: 235px;
@@ -1853,7 +1853,7 @@ h2 {
     padding: 70px 18px;
   }
   .visual-label {
-    font-size: 8px;
+    font-size: 10px;
     top: 20px;
     left: 20px;
   }
@@ -1864,14 +1864,14 @@ h2 {
   }
   .browser-toolbar {
     height: 23px;
-    font-size: 6px;
+    font-size: 10px;
   }
   .visual-decoration {
     top: 59px;
     right: 20px;
   }
   .visual-footnote {
-    font-size: 9px;
+    font-size: 11px;
     left: 20px;
   }
   .small-browser {
@@ -1894,11 +1894,11 @@ h2 {
     gap: 20px;
   }
   .project-links .text-link {
-    font-size: 10px;
+    font-size: 12px;
     gap: 10px;
   }
   .repo-link {
-    font-size: 9px;
+    font-size: 11px;
   }
   .journey {
     padding-top: 5px;
@@ -1910,10 +1910,10 @@ h2 {
     font-size: 14px;
   }
   .timeline p {
-    font-size: 11px;
+    font-size: 12px;
   }
   .timeline-meta .mono {
-    font-size: 9px;
+    font-size: 11px;
   }
   .contact h2 {
     font-size: 34px;
@@ -1923,10 +1923,10 @@ h2 {
     height: 76px;
   }
   .contact-link > span:not(.contact-icon):not(.sr-only) {
-    font-size: 10px;
+    font-size: 12px;
   }
   .footer p {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 @media (max-width: 650px) {
@@ -1947,7 +1947,7 @@ h2 {
     gap: 13px;
   }
   .header-github {
-    font-size: 11px;
+    font-size: 12px;
     gap: 7px;
   }
   .icon-button {
@@ -2002,7 +2002,7 @@ h2 {
   }
   .nav a span {
     display: block;
-    font-size: 11px;
+    font-size: 12px;
     color: var(--muted);
   }
   .nav a:after {
@@ -2018,7 +2018,7 @@ h2 {
     padding-bottom: 32px;
   }
   .eyebrow {
-    font-size: 9px;
+    font-size: 11px;
     letter-spacing: 1.5px;
   }
   h1 {
@@ -2039,17 +2039,17 @@ h2 {
   }
   .hero-actions .button {
     min-height: 46px;
-    font-size: 11px;
+    font-size: 12px;
     gap: 19px;
     padding-inline: 17px;
   }
   .hero-actions .text-link {
-    font-size: 11px;
+    font-size: 12px;
     gap: 13px;
   }
   .hero-tags {
     margin-top: 25px;
-    font-size: 9px;
+    font-size: 11px;
     gap: 10px;
   }
   .hero-tags span + span:before {
@@ -2067,12 +2067,12 @@ h2 {
     right: 22px;
   }
   .art-topline .mono {
-    font-size: 8px;
+    font-size: 10px;
   }
   .art-sticker {
     top: 68px;
     right: 26px;
-    font-size: 9px;
+    font-size: 11px;
   }
   .code-card {
     top: 103px;
@@ -2081,16 +2081,16 @@ h2 {
   }
   .window-bar {
     height: 32px;
-    font-size: 8px;
+    font-size: 10px;
     padding-inline: 13px;
   }
   .code-body {
-    font-size: 11px;
+    font-size: 12px;
     padding: 14px 20px 17px;
     line-height: 1.9;
   }
   .code-comment {
-    font-size: 9px;
+    font-size: 11px;
     margin-top: 4px;
   }
   .flow-card {
@@ -2104,10 +2104,10 @@ h2 {
     padding: 8px;
   }
   .flow-card strong {
-    font-size: 11px;
+    font-size: 12px;
   }
   .flow-card div > span {
-    font-size: 8px;
+    font-size: 10px;
   }
   .flow-check {
     display: block;
@@ -2118,7 +2118,7 @@ h2 {
     right: 20px;
   }
   .art-bottomline .mono {
-    font-size: 7px;
+    font-size: 10px;
   }
   .orbit {
     left: 35px;
@@ -2134,13 +2134,13 @@ h2 {
     gap: 12px;
   }
   .hero-bottom > .mono {
-    font-size: 8px;
+    font-size: 10px;
   }
   .hero-bottom > .mono:last-child {
     display: none;
   }
   .scroll-cue {
-    font-size: 7px;
+    font-size: 10px;
     gap: 10px;
   }
   .section {
@@ -2151,11 +2151,11 @@ h2 {
     margin-bottom: 29px;
   }
   .section-label .mono {
-    font-size: 8px;
+    font-size: 10px;
     letter-spacing: 0.8px;
   }
   .small-note {
-    font-size: 8px;
+    font-size: 10px;
   }
   .section-rule {
     min-width: 10px;
@@ -2172,7 +2172,7 @@ h2 {
   }
   .about-source {
     margin-top: 16px;
-    font-size: 11px;
+    font-size: 12px;
   }
   .about-body > p {
     font-size: 13px;
@@ -2187,7 +2187,7 @@ h2 {
     font-size: 12px;
   }
   .principles p {
-    font-size: 11px;
+    font-size: 12px;
   }
   .section-heading {
     align-items: flex-start;
@@ -2220,7 +2220,7 @@ h2 {
     font-size: 19px;
   }
   .stack-top .mono {
-    font-size: 6px;
+    font-size: 10px;
     letter-spacing: 0;
   }
   .stack-card h3 {
@@ -2228,7 +2228,7 @@ h2 {
     letter-spacing: -0.5px;
   }
   .stack-card > p {
-    font-size: 10px;
+    font-size: 12px;
     margin-top: 6px;
     margin-bottom: 16px;
   }
@@ -2236,7 +2236,7 @@ h2 {
     gap: 5px;
   }
   .tech-tags li {
-    font-size: 9px;
+    font-size: 11px;
     padding: 4px 7px;
   }
   .stack-card .tech-tags {
@@ -2249,10 +2249,10 @@ h2 {
     margin-top: 20px;
   }
   .exploring > .mono {
-    font-size: 8px;
+    font-size: 10px;
   }
   .exploring p {
-    font-size: 10px;
+    font-size: 12px;
     width: 100%;
     line-height: 1.7;
   }
@@ -2268,11 +2268,11 @@ h2 {
     gap: 6px;
   }
   .filter {
-    font-size: 10px;
+    font-size: 12px;
     padding: 9px 10px;
   }
   .filter span {
-    font-size: 8px;
+    font-size: 10px;
   }
   .project-count {
     display: none;
@@ -2299,10 +2299,10 @@ h2 {
   }
   .browser-toolbar {
     height: 23px;
-    font-size: 6px;
+    font-size: 10px;
   }
   .visual-label {
-    font-size: 8px;
+    font-size: 10px;
     top: 20px;
     left: 20px;
   }
@@ -2314,7 +2314,7 @@ h2 {
     font-size: 14px;
   }
   .visual-footnote {
-    font-size: 8px;
+    font-size: 10px;
     bottom: 19px;
   }
   .visual-open {
@@ -2332,10 +2332,10 @@ h2 {
     margin-bottom: 13px;
   }
   .project-meta .mono {
-    font-size: 8px;
+    font-size: 10px;
   }
   .project-type {
-    font-size: 8px;
+    font-size: 10px;
   }
   .project-info h3 {
     font-size: 27px;
@@ -2351,17 +2351,17 @@ h2 {
     margin: 19px 0;
   }
   .contribution > p {
-    font-size: 11px;
+    font-size: 12px;
   }
   .project-info > .tech-tags {
     margin-bottom: 20px;
   }
   .project-links .text-link {
-    font-size: 11px;
+    font-size: 12px;
     gap: 18px;
   }
   .repo-link {
-    font-size: 10px;
+    font-size: 12px;
   }
   .small-browser {
     left: 25%;
@@ -2385,7 +2385,7 @@ h2 {
   }
   .all-repos {
     margin-top: 27px;
-    font-size: 10px;
+    font-size: 12px;
     gap: 10px;
   }
   .journey {
@@ -2409,10 +2409,10 @@ h2 {
     font-size: 15px;
   }
   .timeline p {
-    font-size: 11px;
+    font-size: 12px;
   }
   .timeline-meta .mono {
-    font-size: 10px;
+    font-size: 12px;
   }
   .timeline-kind {
     margin-top: 12px;
@@ -2446,7 +2446,7 @@ h2 {
     height: 21px;
   }
   .contact-link > span:not(.contact-icon):not(.sr-only) {
-    font-size: 11px;
+    font-size: 12px;
   }
   .footer {
     padding: 24px 0;
@@ -2459,14 +2459,14 @@ h2 {
     font-size: 25px;
   }
   .footer p {
-    font-size: 8px;
+    font-size: 10px;
     order: 3;
     width: 100%;
     margin-top: 0;
   }
   .back-top {
     margin-left: auto;
-    font-size: 7px;
+    font-size: 10px;
     gap: 12px;
   }
   .project-dialog {
@@ -2481,7 +2481,7 @@ h2 {
     padding: 24px 20px 29px;
   }
   .dialog-heading > .eyebrow {
-    font-size: 8px;
+    font-size: 10px;
     letter-spacing: 0.4px;
   }
   .dialog-heading h2 {
@@ -2506,10 +2506,10 @@ h2 {
     padding: 14px 12px;
   }
   .architecture span {
-    font-size: 10px;
+    font-size: 12px;
   }
   .architecture b {
-    font-size: 8px;
+    font-size: 10px;
   }
   .architecture i {
     font-size: 13px;
@@ -2518,7 +2518,7 @@ h2 {
     padding: 14px 15px;
   }
   .verification-note p {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 @media (max-width: 359px) {
@@ -2529,21 +2529,21 @@ h2 {
     gap: 8px;
   }
   .header-github {
-    font-size: 10px;
+    font-size: 12px;
   }
   .hero-actions {
     gap: 17px;
   }
   .hero-actions .button {
-    font-size: 10px;
+    font-size: 12px;
     padding-inline: 13px;
   }
   .hero-actions .text-link {
-    font-size: 10px;
+    font-size: 12px;
     gap: 8px;
   }
   .hero-tags {
-    font-size: 8px;
+    font-size: 10px;
     gap: 7px;
   }
   .hero-tags span + span:before {
@@ -2554,7 +2554,7 @@ h2 {
     right: 20px;
   }
   .code-body {
-    font-size: 10px;
+    font-size: 12px;
     padding-inline: 16px;
   }
   .flow-card {
@@ -2567,26 +2567,26 @@ h2 {
     padding: 17px 12px;
   }
   .stack-top .mono {
-    font-size: 6px;
+    font-size: 10px;
   }
   .stack-card h3 {
     font-size: 14px;
   }
   .stack-card > p {
-    font-size: 9px;
+    font-size: 11px;
   }
   .filter {
-    font-size: 9px;
+    font-size: 11px;
     padding-inline: 9px;
   }
   .project-info {
     padding: 20px;
   }
   .project-meta .mono {
-    font-size: 7px;
+    font-size: 10px;
   }
   .project-type {
-    font-size: 7px;
+    font-size: 10px;
   }
   .timeline h3 {
     font-size: 14px;
