@@ -1,0 +1,10 @@
+# Local tools and temporary verification output
+node_modules/
+.preview/
+test-results/
+playwright-report/
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.*

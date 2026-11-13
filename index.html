@@ -1,0 +1,920 @@
+<!doctype html>
+<html lang="ko" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="description"
+      content="사용자의 일상에 도움이 되는 서비스를 만드는 풀스택 개발자 강기민의 포트폴리오. Java, Spring Boot, React, Express 기반 프로젝트와 개발 경험을 소개합니다."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:title" content="강기민 · Full-stack Developer" />
+    <meta
+      property="og:description"
+      content="일상의 작은 불편을, 쓸모 있는 서비스로. 강기민의 기술과 프로젝트를 만나보세요."
+    />
+    <title>강기민 · Full-stack Developer</title>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <script>
+      try {
+        const savedTheme = localStorage.getItem("kgm-theme");
+        document.documentElement.dataset.theme =
+          savedTheme === "dark" ||
+          (!savedTheme &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches)
+            ? "dark"
+            : "light";
+      } catch (_) {}
+    </script>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">본문으로 바로가기</a>
+    <svg
+      class="icon-library"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <symbol id="icon-arrow" viewBox="0 0 24 24">
+        <path d="M5 19 19 5M5 5h14v14" />
+      </symbol>
+      <symbol id="icon-github" viewBox="0 0 24 24">
+        <path
+          d="M9 19c-4.3 1.3-4.3-2.2-6-2.7M15 22v-3.4c0-1 .1-1.4-.5-2 3.3-.4 6.8-1.6 6.8-7.2A5.6 5.6 0 0 0 19.8 5a5.2 5.2 0 0 0-.1-4s-1.3-.4-4.4 1.7a15 15 0 0 0-8 0C4.2.6 2.9 1 2.9 1A5.2 5.2 0 0 0 2.8 5a5.6 5.6 0 0 0-1.5 4.4c0 5.6 3.5 6.8 6.8 7.2-.6.6-.6 1.2-.6 2V22"
+          transform="translate(1 1) scale(.92)"
+        />
+      </symbol>
+      <symbol id="icon-sun" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="4" />
+        <path
+          d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"
+        />
+      </symbol>
+      <symbol id="icon-moon" viewBox="0 0 24 24">
+        <path d="M21 13A9 9 0 0 1 11 3a9 9 0 1 0 10 10Z" />
+      </symbol>
+      <symbol id="icon-close" viewBox="0 0 24 24">
+        <path d="m6 6 12 12M6 18 18 6" />
+      </symbol>
+      <symbol id="icon-code" viewBox="0 0 24 24">
+        <path d="m8 6-6 6 6 6m8-12 6 6-6 6M14 3l-4 18" />
+      </symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24">
+        <path d="m5 12 4 4L19 6" />
+      </symbol>
+    </svg>
+
+    <header class="header">
+      <div class="container header-inner">
+        <a class="wordmark" href="#home" aria-label="강기민 포트폴리오 처음으로"
+          >gimin<span class="wordmark-dot">.</span
+          ><span class="wordmark-caption">DEVELOPER</span></a
+        >
+        <nav class="nav" id="navigation" aria-label="주 메뉴">
+          <a href="#about" data-nav="about">About<span>소개</span></a>
+          <a href="#skills" data-nav="skills">Skills<span>기술</span></a>
+          <a href="#projects" data-nav="projects"
+            >Projects<span>프로젝트</span></a
+          >
+          <a href="#journey" data-nav="journey">Journey<span>경험</span></a>
+        </nav>
+        <div class="header-actions">
+          <button
+            class="icon-button theme-toggle"
+            type="button"
+            aria-label="다크 모드로 전환"
+            title="다크 모드로 전환"
+          >
+            <svg class="icon moon-icon"><use href="#icon-moon" /></svg
+            ><svg class="icon sun-icon"><use href="#icon-sun" /></svg>
+          </button>
+          <a
+            class="header-github"
+            href="https://github.com/KangGiMin"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub <svg class="icon"><use href="#icon-arrow" /></svg
+            ><span class="sr-only"> (새 탭)</span></a
+          >
+          <button
+            class="icon-button menu-toggle"
+            type="button"
+            aria-controls="navigation"
+            aria-expanded="false"
+            aria-label="메뉴 열기"
+          >
+            <span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero container" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="eyebrow">
+            <span class="status-dot"></span> FULL-STACK DEVELOPER
+            <span class="eyebrow-line"></span>
+          </div>
+          <h1 id="hero-title">
+            일상의 작은 불편을,<br /><span class="serif-accent">쓸모 있는</span
+            ><br />서비스로 만듭니다<span class="title-dot">.</span>
+          </h1>
+          <p class="hero-description">
+            안녕하세요, 풀스택 개발자 <strong>강기민</strong>입니다.<br />화면
+            너머의 데이터 흐름을 이해하고,<br />사용자에게 도움이 되는 경험을
+            구현합니다.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects"
+              >프로젝트 살펴보기
+              <svg class="icon"><use href="#icon-arrow" /></svg></a
+            ><a class="text-link" href="#about"
+              >조금 더 알아보기 <span aria-hidden="true">↓</span></a
+            >
+          </div>
+          <div class="hero-tags">
+            <span>Java & Spring Boot</span><span>React & Express</span
+            ><span>Web & Mobile</span>
+          </div>
+        </div>
+        <div
+          class="hero-art"
+          aria-label="아이디어를 화면과 API, 데이터로 연결하는 개발 과정"
+        >
+          <div class="art-topline">
+            <span class="mono">IDEA → CODE → EVERYDAY</span
+            ><span class="art-spark" aria-hidden="true">✳</span>
+          </div>
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="art-sticker">
+            <span class="sticker-dot"></span> 작지만, 확실한 쓰임
+          </div>
+          <div class="code-card">
+            <div class="window-bar">
+              <span class="window-dots"><i></i><i></i><i></i></span
+              ><span>developer.ts</span
+              ><svg class="icon"><use href="#icon-code" /></svg>
+            </div>
+            <div class="code-body" aria-hidden="true">
+              <div><span class="code-purple">const</span> developer = {</div>
+              <div class="code-indent">
+                name: <span class="code-string">'강기민'</span>,
+              </div>
+              <div class="code-indent">
+                focus: <span class="code-string">'사용자 경험'</span>,
+              </div>
+              <div class="code-indent">
+                build: [<span class="code-string">'Web'</span>,
+                <span class="code-string">'Mobile'</span>],
+              </div>
+              <div class="code-indent">
+                mindset: <span class="code-string">'이해하고, 개선하기'</span>
+              </div>
+              <div>};</div>
+              <div class="code-comment">// 작은 아이디어가 일상이 되도록.</div>
+            </div>
+          </div>
+          <div class="flow-card">
+            <span class="flow-icon"
+              ><svg class="icon"><use href="#icon-code" /></svg
+            ></span>
+            <div>
+              <strong>화면부터 데이터까지</strong
+              ><span>Frontend <b>↔</b> API <b>↔</b> Database</span>
+            </div>
+            <span class="flow-check"
+              ><svg class="icon"><use href="#icon-check" /></svg
+            ></span>
+          </div>
+          <div class="art-bottomline">
+            <span class="mono">BUILT WITH CURIOSITY.</span
+            ><span class="mono">01 / ∞</span>
+          </div>
+        </div>
+        <div class="hero-bottom">
+          <span class="mono">PORTFOLIO / 2026</span
+          ><a href="#about" class="scroll-cue"
+            >SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a
+          ><span class="mono">KANG GI MIN</span>
+        </div>
+      </section>
+
+      <section class="about section" id="about" aria-labelledby="about-title">
+        <div class="container">
+          <div class="section-label">
+            <span class="mono">01 / ABOUT ME</span
+            ><span class="section-rule"></span
+            ><span class="small-note">어떤 개발자인가요?</span>
+          </div>
+          <div class="about-layout">
+            <div>
+              <h2 id="about-title">
+                기능의 완성을 넘어,<br /><span class="muted"
+                  >쓰임을 생각합니다.</span
+                >
+              </h2>
+              <a
+                class="text-link about-source"
+                href="https://github.com/KangGiMin"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub 프로필 읽기
+                <svg class="icon"><use href="#icon-arrow" /></svg
+                ><span class="sr-only"> (새 탭)</span></a
+              >
+            </div>
+            <div class="about-body">
+              <p>
+                사람들이 편하게 이용할 수 있는 웹·앱 서비스를 만들고 싶습니다.
+                단순히 동작하는 코드를 넘어,
+                <strong
+                  >왜 이렇게 동작하는지 이해하고 유지보수하기 좋은 구조</strong
+                >를 고민합니다.
+              </p>
+              <p>
+                대학 동아리와 부트캠프에서 API 연동과 게시글·댓글 CRUD를
+                경험했습니다. 지금은 웹과 모바일을 하나의 API로 연결하는
+                프로젝트를 통해 서비스 전체를 보는 시야를 넓혀가고 있습니다.
+              </p>
+              <div class="principles">
+                <div>
+                  <span class="principle-number">01</span
+                  ><strong>원리를 이해하는 개발</strong>
+                  <p>
+                    서버와 클라이언트 사이,<br />데이터가 흐르는 과정을
+                    살핍니다.
+                  </p>
+                </div>
+                <div>
+                  <span class="principle-number">02</span
+                  ><strong>함께 읽을 수 있는 코드</strong>
+                  <p>
+                    명확한 문서화와 유지보수를<br />고려한 코드를 지향합니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="skills section"
+        id="skills"
+        aria-labelledby="skills-title"
+      >
+        <div class="container">
+          <div class="section-label">
+            <span class="mono">02 / TECH STACK</span
+            ><span class="section-rule"></span
+            ><span class="small-note">아이디어를 구현하는 도구들</span>
+          </div>
+          <div class="section-heading">
+            <h2 id="skills-title">
+              경험을 쌓아온 기술들<span class="title-dot">.</span>
+            </h2>
+            <p>
+              프로젝트에서 사용한 기술을 중심으로,<br />화면부터 서버와
+              데이터까지 연결합니다.
+            </p>
+          </div>
+          <div class="stack-grid">
+            <article class="stack-card">
+              <div class="stack-top">
+                <span class="stack-icon">{ }</span
+                ><span class="mono">01 / CLIENT</span>
+              </div>
+              <h3>Frontend</h3>
+              <p>사용자와 가장 가까운 화면</p>
+              <ul class="tech-tags">
+                <li>React</li>
+                <li>JavaScript</li>
+                <li>HTML · CSS</li>
+                <li>Zustand</li>
+                <li>Vite</li>
+              </ul>
+            </article>
+            <article class="stack-card">
+              <div class="stack-top">
+                <span class="stack-icon">↔</span
+                ><span class="mono">02 / SERVER</span>
+              </div>
+              <h3>Backend</h3>
+              <p>서비스의 기능과 데이터 흐름</p>
+              <ul class="tech-tags">
+                <li>Java</li>
+                <li>Spring Boot</li>
+                <li>JPA</li>
+                <li>Node.js</li>
+                <li>Express</li>
+              </ul>
+            </article>
+            <article class="stack-card">
+              <div class="stack-top">
+                <span class="stack-icon">▤</span
+                ><span class="mono">03 / DATA</span>
+              </div>
+              <h3>Database & Auth</h3>
+              <p>데이터 저장과 사용자 인증</p>
+              <ul class="tech-tags">
+                <li>Oracle DB</li>
+                <li>MongoDB</li>
+                <li>Mongoose</li>
+                <li>Firebase Auth</li>
+              </ul>
+            </article>
+            <article class="stack-card">
+              <div class="stack-top">
+                <span class="stack-icon">⌘</span
+                ><span class="mono">04 / EXTEND</span>
+              </div>
+              <h3>Mobile & Tools</h3>
+              <p>웹을 넘어 확장하는 경험</p>
+              <ul class="tech-tags">
+                <li>React Native</li>
+                <li>Expo</li>
+                <li>Git · GitHub</li>
+                <li>Notion</li>
+              </ul>
+            </article>
+          </div>
+          <div class="exploring">
+            <span class="mono">ALSO EXPLORING</span>
+            <p>
+              TypeScript <span>·</span> FastAPI <span>·</span> PostgreSQL
+              <span>·</span> MSSQL
+            </p>
+            <span class="exploring-note">프로필에 기록한 학습 기술</span>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="projects section"
+        id="projects"
+        aria-labelledby="projects-title"
+      >
+        <div class="container">
+          <div class="section-label">
+            <span class="mono">03 / SELECTED WORK</span
+            ><span class="section-rule"></span
+            ><span class="small-note">코드로 쌓아온 경험</span>
+          </div>
+          <div class="section-heading">
+            <h2 id="projects-title">
+              직접 만들며 배웠습니다<span class="title-dot">.</span>
+            </h2>
+            <p>
+              일정 관리부터 음악, 영화 커뮤니티까지.<br />세 가지 프로젝트에
+              담긴 개발 경험입니다.
+            </p>
+          </div>
+          <div class="project-toolbar">
+            <div class="filters" role="group" aria-label="프로젝트 기술 필터">
+              <button
+                type="button"
+                class="filter active"
+                data-filter="all"
+                aria-pressed="true"
+              >
+                전체 <span>03</span></button
+              ><button
+                type="button"
+                class="filter"
+                data-filter="react"
+                aria-pressed="false"
+              >
+                React · Node.js</button
+              ><button
+                type="button"
+                class="filter"
+                data-filter="java"
+                aria-pressed="false"
+              >
+                Java · Spring
+              </button>
+            </div>
+            <span class="project-count mono" role="status" aria-live="polite"
+              >3 PROJECTS</span
+            >
+          </div>
+          <div class="project-grid">
+            <article
+              class="project-card project-featured"
+              data-category="react"
+            >
+              <button
+                class="project-visual forget-visual"
+                type="button"
+                data-project="forget"
+                aria-label="Don't forget 프로젝트 상세보기"
+              >
+                <span class="visual-label mono"
+                  >WEB + MOBILE / PRODUCTIVITY</span
+                ><span class="visual-decoration" aria-hidden="true">✓</span>
+                <span class="browser-frame"
+                  ><span class="browser-toolbar"
+                    ><span class="window-dots"><i></i><i></i><i></i></span
+                    ><span>Don't forget — 나의 하루를 기록하는 곳</span
+                    ><span aria-hidden="true">↗</span></span
+                  ><img
+                    src="./assets/images/dont-forget.png"
+                    alt="Don't forget의 실제 웹 화면: 날짜별 할 일, 달성률, 카테고리와 월간 달력"
+                    width="1792"
+                    height="862"
+                    loading="lazy"
+                /></span>
+                <span class="visual-footnote"
+                  ><span class="tiny-dot"></span> 작은 실천이 쌓이는 일상</span
+                ><span class="visual-open"
+                  ><svg class="icon"><use href="#icon-arrow" /></svg
+                ></span>
+              </button>
+              <div class="project-info">
+                <div class="project-meta">
+                  <span class="mono">01 / FULL-STACK</span
+                  ><span class="project-type">웹 · 모바일</span>
+                </div>
+                <h3>Don't forget<span class="project-title-dot">.</span></h3>
+                <p class="project-subtitle">
+                  오늘의 할 일부터, 꾸준한 내일까지.
+                </p>
+                <p class="project-description">
+                  할 일·반복 루틴·일기를 한곳에 모은 개인 일정 관리 서비스.
+                  React 웹과 Expo 모바일이 하나의 Express API와 MongoDB를
+                  공유합니다.
+                </p>
+                <div class="contribution">
+                  <span>프로젝트 핵심</span>
+                  <p>
+                    웹·모바일 공통 API · Firebase 인증<br />반복 루틴 스케줄러 ·
+                    완료 기록 기반 티어
+                  </p>
+                </div>
+                <ul class="tech-tags">
+                  <li>React</li>
+                  <li>Express</li>
+                  <li>MongoDB</li>
+                  <li>Expo</li>
+                </ul>
+                <div class="project-links">
+                  <button type="button" class="text-link" data-project="forget">
+                    프로젝트 자세히 <span aria-hidden="true">↗</span></button
+                  ><a
+                    class="repo-link"
+                    href="https://github.com/KangGiMin/Don-t-forget"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Don't forget GitHub 저장소 (새 탭)"
+                    ><svg class="icon"><use href="#icon-github" /></svg> Code</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="project-card" data-category="java">
+              <button
+                class="project-visual music-visual"
+                type="button"
+                data-project="music"
+                aria-label="Music Is My Life 프로젝트 상세보기"
+              >
+                <span class="visual-label mono">WEB / MUSIC COMMUNITY</span
+                ><span class="music-note" aria-hidden="true">♫</span
+                ><span class="small-browser"
+                  ><span class="browser-toolbar"
+                    ><span class="window-dots"><i></i><i></i><i></i></span
+                    ><span>Music Is My Life</span></span
+                  ><img
+                    src="./assets/images/music-community.png"
+                    alt="Music Is My Life의 실제 게시판 화면: 감정별 필터와 음악 추천 게시글 목록"
+                    width="692"
+                    height="586"
+                    loading="lazy" /></span
+                ><span class="visual-open"
+                  ><svg class="icon"><use href="#icon-arrow" /></svg
+                ></span>
+              </button>
+              <div class="project-info">
+                <div class="project-meta">
+                  <span class="mono">02 / COMMUNITY</span
+                  ><span class="project-type">팀 프로젝트 · 4명</span>
+                </div>
+                <h3>Music Is My Life</h3>
+                <p class="project-subtitle">
+                  감정을 나누고, 음악으로 연결되다.
+                </p>
+                <p class="project-description">
+                  감정에 맞는 음악을 추천하고 생각을 나누는 커뮤니티. 게시글의
+                  생성부터 조회·수정·삭제까지, 콘텐츠의 흐름을 구현했습니다.
+                </p>
+                <div class="contribution">
+                  <span>나의 역할</span>
+                  <p>게시글 CRUD 구현 · 프로젝트 발표 PPT 제작</p>
+                </div>
+                <ul class="tech-tags">
+                  <li>Java</li>
+                  <li>Spring Boot</li>
+                  <li>Oracle DB</li>
+                  <li>JavaScript</li>
+                </ul>
+                <div class="project-links">
+                  <button type="button" class="text-link" data-project="music">
+                    프로젝트 자세히 <span aria-hidden="true">↗</span></button
+                  ><a
+                    class="repo-link"
+                    href="https://github.com/KangGiMin/Music-is-my-life"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Music Is My Life GitHub 저장소 (새 탭)"
+                    ><svg class="icon"><use href="#icon-github" /></svg> Code</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="project-card" data-category="java">
+              <button
+                class="project-visual review-visual"
+                type="button"
+                data-project="review"
+                aria-label="ReviewPlus 2.0 프로젝트 상세보기"
+              >
+                <span class="visual-label mono">WEB / MOVIE REVIEW</span
+                ><span class="review-word" aria-hidden="true">CINEMA.</span
+                ><span class="review-screen"
+                  ><img
+                    src="./assets/images/reviewplus.png"
+                    alt="ReviewPlus 2.0의 실제 웹 화면: 현재 상영 영화, 최고 평점 영화와 영화 뉴스"
+                    width="538"
+                    height="730"
+                    loading="lazy" /></span
+                ><span class="visual-open"
+                  ><svg class="icon"><use href="#icon-arrow" /></svg
+                ></span>
+              </button>
+              <div class="project-info">
+                <div class="project-meta">
+                  <span class="mono">03 / COMMUNITY</span
+                  ><span class="project-type">팀 프로젝트 · 5명</span>
+                </div>
+                <h3>ReviewPlus 2.0</h3>
+                <p class="project-subtitle">한 편의 영화가, 또 다른 대화로.</p>
+                <p class="project-description">
+                  최신 영화 정보와 리뷰를 나누는 영화 커뮤니티. 영화 상세 화면과
+                  좋아요·리뷰 기능을 개선하고, 대댓글로 소통의 범위를
+                  넓혔습니다.
+                </p>
+                <div class="contribution">
+                  <span>나의 역할</span>
+                  <p>영화 상세 UI/UX · 좋아요·리뷰 개선 · 대댓글 추가</p>
+                </div>
+                <ul class="tech-tags">
+                  <li>Java</li>
+                  <li>Spring Boot</li>
+                  <li>JPA</li>
+                  <li>Oracle DB</li>
+                </ul>
+                <div class="project-links">
+                  <button type="button" class="text-link" data-project="review">
+                    프로젝트 자세히 <span aria-hidden="true">↗</span></button
+                  ><a
+                    class="repo-link"
+                    href="https://github.com/KangGiMin/ReviewPlus2.0"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="ReviewPlus 2.0 GitHub 저장소 (새 탭)"
+                    ><svg class="icon"><use href="#icon-github" /></svg> Code</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+          <a
+            class="all-repos"
+            href="https://github.com/KangGiMin?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><svg class="icon"><use href="#icon-github" /></svg> GitHub에서 더
+            많은 코드 보기 <svg class="icon"><use href="#icon-arrow" /></svg
+            ><span class="sr-only"> (새 탭)</span></a
+          >
+        </div>
+      </section>
+
+      <section
+        class="journey section"
+        id="journey"
+        aria-labelledby="journey-title"
+      >
+        <div class="container">
+          <div class="section-label">
+            <span class="mono">04 / LEARNING JOURNEY</span
+            ><span class="section-rule"></span
+            ><span class="small-note">계속해서 넓혀가는 시야</span>
+          </div>
+          <div class="journey-layout">
+            <div>
+              <h2 id="journey-title">
+                배우고, 만들고,<br /><span class="muted">다시 한 걸음.</span>
+              </h2>
+              <p class="journey-intro">
+                기초를 쌓는 학습과 직접 만드는 경험을<br />이어가며 개발자로
+                성장하고 있습니다.
+              </p>
+            </div>
+            <div class="timeline">
+              <article class="timeline-item">
+                <div class="timeline-marker current"></div>
+                <div class="timeline-meta">
+                  <span class="mono">2026.03 — 현재</span
+                  ><span class="current-label">재학 중</span>
+                </div>
+                <h3>한국폴리텍대학교 부산캠퍼스</h3>
+                <p>소프트웨어융합과</p>
+                <span class="timeline-kind">UNIVERSITY</span>
+              </article>
+              <article class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-meta">
+                  <span class="mono">2025.06 — 2025.12</span
+                  ><span class="completed-label">수료</span>
+                </div>
+                <h3>Java & Spring Boot 개발자 양성과정</h3>
+                <p>크로스 플랫폼 융합 응용 SW 개발자 양성과정</p>
+                <span class="timeline-kind">BOOTCAMP</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div class="container contact-inner">
+          <div>
+            <div class="eyebrow">
+              <span class="status-dot"></span> LET'S CONNECT
+            </div>
+            <h2 id="contact-title">
+              다음 이야기는,<br />함께 만들어가요<span>.</span>
+            </h2>
+            <p>
+              제가 쌓아가는 경험과 코드가 궁금하다면<br />GitHub에서 더 자세히
+              만나보세요.
+            </p>
+          </div>
+          <a
+            class="contact-link"
+            href="https://github.com/KangGiMin"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><span class="contact-icon"
+              ><svg class="icon"><use href="#icon-arrow" /></svg></span
+            ><span>github.com/KangGiMin</span
+            ><span class="sr-only"> (새 탭)</span></a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <a class="wordmark" href="#home"
+          >gimin<span class="wordmark-dot">.</span></a
+        >
+        <p>
+          © <span id="year">2026</span> 강기민. Built with care & curiosity.
+        </p>
+        <a class="back-top" href="#home"
+          >BACK TO TOP <span aria-hidden="true">↑</span></a
+        >
+      </div>
+    </footer>
+
+    <dialog
+      class="project-dialog"
+      id="project-dialog"
+      aria-labelledby="dialog-title"
+    >
+      <div class="dialog-top">
+        <span class="mono">PROJECT NOTES</span
+        ><button
+          type="button"
+          class="icon-button dialog-close"
+          aria-label="프로젝트 상세 닫기"
+        >
+          <svg class="icon"><use href="#icon-close" /></svg>
+        </button>
+      </div>
+      <div class="dialog-content" id="dialog-content"></div>
+    </dialog>
+
+    <template id="detail-forget"
+      ><div class="dialog-heading">
+        <span class="eyebrow">WEB + MOBILE · FULL-STACK</span>
+        <h2 id="dialog-title">Don't forget</h2>
+        <p>할 일, 루틴, 일기를 연결하는 개인 일정 관리 서비스</p>
+      </div>
+      <img
+        class="dialog-image"
+        src="./assets/images/dont-forget.png"
+        alt="Don't forget 실제 웹 화면"
+        width="1792"
+        height="862"
+      />
+      <div class="dialog-section">
+        <h3>서비스 소개</h3>
+        <p>
+          React 웹과 Expo/React Native 모바일 앱이 하나의 Express API와
+          MongoDB를 사용합니다. 같은 Firebase 계정으로 로그인하면 두 환경에서
+          동일한 서버 데이터를 조회합니다.
+        </p>
+      </div>
+      <div class="dialog-section">
+        <h3>주요 구현</h3>
+        <ul>
+          <li>
+            날짜·카테고리별 할 일 CRUD, 검색·필터, 월간 캘린더와 달성률 표시
+          </li>
+          <li>서버 스케줄러를 통한 반복 루틴의 할 일 생성</li>
+          <li>날짜별 일기 작성·조회·수정·삭제</li>
+          <li>일일 최대 3점의 티어 점수와 누적 완료 수 기반 명예의 전당</li>
+          <li>Firebase ID 토큰 검증 및 UID 기반 데이터 소유자 구분</li>
+          <li>라이트·다크·시스템 테마와 반응형 웹·모바일 화면</li>
+        </ul>
+      </div>
+      <div class="architecture">
+        <span>React Web<br /><b>Expo Mobile</b></span
+        ><i>↔</i><span>Express API<br /><b>Firebase Auth</b></span
+        ><i>↔</i><span>MongoDB<br /><b>Mongoose</b></span>
+      </div>
+      <div class="dialog-section">
+        <h3>구현에서 살펴본 지점</h3>
+        <p>
+          서로 다른 클라이언트가 하나의 API를 사용하도록 구성하고, 인증된
+          사용자의 UID를 기준으로 데이터를 구분합니다. 완료를 취소했다가 다시
+          처리해도 점수가 중복 지급되지 않도록 완료 이벤트를 저장하는 구조를
+          갖추었습니다.
+        </p>
+      </div>
+      <div class="verification-note">
+        <strong>구현 및 검증 범위</strong>
+        <p>
+          브라우저 푸시는 전송 접수까지 확인했으며 실제 화면 표시 문제는 조사
+          보류 상태입니다. 모바일 원격 푸시와 네이버·카카오 로그인은 외부 설정
+          및 기기 검증이 필요합니다. 모바일 API 연결 변경 후 전체 기능 재확인이
+          필요하며, 루틴에서 생성된 할 일의 사전 알림은 추가 검토 항목입니다.
+        </p>
+      </div>
+      <ul class="tech-tags">
+        <li>React</li>
+        <li>Vite</li>
+        <li>Zustand</li>
+        <li>React Native</li>
+        <li>Expo</li>
+        <li>Express</li>
+        <li>MongoDB</li>
+        <li>Firebase</li>
+      </ul>
+      <a
+        class="button button-primary dialog-repo"
+        href="https://github.com/KangGiMin/Don-t-forget"
+        target="_blank"
+        rel="noopener noreferrer"
+        >코드와 README 보기 <svg class="icon"><use href="#icon-arrow" /></svg
+        ><span class="sr-only"> (새 탭)</span></a
+      ></template
+    >
+
+    <template id="detail-music"
+      ><div class="dialog-heading">
+        <span class="eyebrow">TEAM PROJECT · 4 MEMBERS</span>
+        <h2 id="dialog-title">Music Is My Life</h2>
+        <p>감정을 기반으로 음악을 추천하고 소통하는 커뮤니티</p>
+      </div>
+      <img
+        class="dialog-image"
+        src="./assets/images/music-community.png"
+        alt="Music Is My Life 실제 게시판 화면"
+        width="692"
+        height="586"
+      />
+      <div class="dialog-section">
+        <h3>서비스 소개</h3>
+        <p>
+          행복·슬픔·평온 등 감정 카테고리에 따라 음악 추천 게시글을 살펴보고,
+          유튜브 링크와 추천 이유를 공유하는 웹 커뮤니티입니다. Java와 Spring
+          Boot, Oracle DB를 기반으로 개발한 4인 팀 프로젝트입니다.
+        </p>
+      </div>
+      <div class="dialog-section">
+        <h3>나의 역할</h3>
+        <ul>
+          <li>게시글 작성·목록 및 상세 조회·수정·삭제 CRUD 구현</li>
+          <li>제목·내용·감정 태그·유튜브 링크를 다루는 게시글 기능 구현</li>
+          <li>프로젝트 발표 PPT 제작</li>
+        </ul>
+      </div>
+      <div class="dialog-section">
+        <h3>경험한 개발 흐름</h3>
+        <p>
+          입력한 콘텐츠를 서버에 저장하고 목록과 상세 화면으로 다시 보여주는
+          흐름을 구현했습니다. 게시글의 생성부터 수정·삭제까지 이어지는 기능을
+          맡아 클라이언트와 서버, 데이터베이스의 연결을 경험했습니다.
+        </p>
+      </div>
+      <div class="verification-note">
+        <strong>팀 내 기여 범위</strong>
+        <p>
+          로그인·회원 관리, 댓글, 좋아요, 감정 추천 버튼 등은 팀 전체의 구현
+          기능입니다. 이 포트폴리오에는 직접 담당한 게시글 CRUD를 중심으로
+          소개했습니다.
+        </p>
+      </div>
+      <ul class="tech-tags">
+        <li>Java</li>
+        <li>Spring Boot</li>
+        <li>Oracle DB</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+      <a
+        class="button button-primary dialog-repo"
+        href="https://github.com/KangGiMin/Music-is-my-life"
+        target="_blank"
+        rel="noopener noreferrer"
+        >코드와 README 보기 <svg class="icon"><use href="#icon-arrow" /></svg
+        ><span class="sr-only"> (새 탭)</span></a
+      ></template
+    >
+
+    <template id="detail-review"
+      ><div class="dialog-heading">
+        <span class="eyebrow"
+          >TEAM PROJECT · 5 MEMBERS · 2025.10.27 — 11.28</span
+        >
+        <h2 id="dialog-title">ReviewPlus 2.0</h2>
+        <p>영화 정보와 리뷰를 나누는 Spring Boot 기반 커뮤니티</p>
+      </div>
+      <img
+        class="dialog-image review-detail-image"
+        src="./assets/images/reviewplus.png"
+        alt="ReviewPlus 2.0 실제 영화 목록 화면"
+        width="538"
+        height="730"
+      />
+      <div class="dialog-section">
+        <h3>서비스 소개</h3>
+        <p>
+          REST API를 활용한 영화 정보 검색과 리뷰·평점·좋아요 기능을 제공하는
+          영화 커뮤니티입니다. 기존 리뷰플러스를 개선한 5인 팀 프로젝트로,
+          Spring Boot와 JPA, Oracle DB를 사용했습니다.
+        </p>
+      </div>
+      <div class="dialog-section">
+        <h3>나의 역할</h3>
+        <ul>
+          <li>영화 상세 정보 페이지 UI/UX 개선</li>
+          <li>영화 좋아요와 리뷰 기능 수정 및 개선</li>
+          <li>리뷰에 답글을 남기는 대댓글 기능 추가</li>
+          <li>어두운 화면 테마 적용</li>
+        </ul>
+      </div>
+      <div class="dialog-section">
+        <h3>경험한 개발 흐름</h3>
+        <p>
+          기존 서비스의 기능을 읽고 개선하는 경험을 쌓았습니다. 상세 화면에서
+          영화 정보를 살펴본 뒤 좋아요와 리뷰, 대댓글로 이어지는 사용자 흐름을
+          다루며 화면과 데이터 처리의 연결을 경험했습니다.
+        </p>
+      </div>
+      <div class="verification-note">
+        <strong>팀 내 기여 범위</strong>
+        <p>
+          검색·회원 관리·관리자 기능과 Flutter 모바일 앱, 배포는 팀 전체의
+          결과입니다. 직접 담당한 웹 상세 화면과 좋아요·리뷰·대댓글 기능을
+          구분해 소개했습니다.
+        </p>
+      </div>
+      <ul class="tech-tags">
+        <li>Java</li>
+        <li>Spring Boot</li>
+        <li>JPA</li>
+        <li>Oracle DB</li>
+        <li>JavaScript</li>
+      </ul>
+      <a
+        class="button button-primary dialog-repo"
+        href="https://github.com/KangGiMin/ReviewPlus2.0"
+        target="_blank"
+        rel="noopener noreferrer"
+        >코드와 README 보기 <svg class="icon"><use href="#icon-arrow" /></svg
+        ><span class="sr-only"> (새 탭)</span></a
+      ></template
+    >
+  </body>
+</html>
