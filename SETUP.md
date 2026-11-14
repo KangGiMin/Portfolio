@@ -13,7 +13,7 @@
 
 ## GitHub에 올리기
 
-이 폴더는 이미 `https://github.com/KangGiMin/Portfolio.git`의 기존 `main` 이력을 가져온 상태이며, `main`이 `origin/main`을 추적합니다. 원격 README는 변경하지 않았습니다. 다시 `git init`하거나 별도 초기 커밋을 만들 필요가 없습니다.
+이 폴더는 이미 `https://github.com/KangGiMin/Portfolio.git`의 기존 `main` 이력을 가져온 상태이며, `main`이 `origin/main`을 추적합니다. 다시 `git init`하거나 별도 초기 커밋을 만들 필요가 없습니다.
 
 PowerShell에서 이 폴더를 연 뒤 실행합니다.
 
@@ -26,15 +26,23 @@ git push origin main
 
 작업 중 GitHub에서 다른 커밋을 추가했다면, 위 커밋을 만든 후 push 전에 `git pull --rebase origin main`으로 반영합니다. 강제 push는 필요하지 않습니다. `git add .`는 파일을 스테이징하는 명령이며, 원격 README가 포함된 이력에서 작업하므로 서로 다른 초기 커밋 때문에 발생하는 push 거부를 피할 수 있습니다.
 
-## GitHub Pages 공개
+## GitHub Pages 접속 및 자동 갱신
 
-push 후 GitHub의 `Portfolio` 저장소에서 **Settings → Pages → Build and deployment**로 이동합니다.
+공개 주소: **https://kanggimin.github.io/Portfolio/**
 
-1. Source를 **Deploy from a branch**로 선택합니다.
-2. Branch는 **main**, 폴더는 **/(root)**를 선택하고 저장합니다.
-3. 배포가 완료되면 Pages 설정에 실제 주소가 표시됩니다. 기본 주소는 `https://kanggimin.github.io/Portfolio/`입니다.
+GitHub Pages가 저장소의 `main` 브랜치, 루트 폴더(`/(root)`)를 배포 소스로 사용합니다. 배포가 완료된 뒤에는 PC에서 VS Code나 Live Server를 실행하지 않아도 위 HTTPS 주소로 접속할 수 있습니다. PC를 꺼도 사이트는 GitHub에서 제공됩니다.
 
-모든 내부 리소스는 상대 경로를 사용하므로 `/Portfolio/` 하위 경로에서도 동작합니다. 자동 배포 워크플로는 별도 필요하지 않습니다.
+수정한 내용을 `main`에 push하면 GitHub Pages가 자동으로 새 버전을 배포합니다. 배포가 완료되기까지는 잠시 시간이 걸릴 수 있으며, 진행 상태는 저장소의 **Actions** 탭에서 확인할 수 있습니다.
+
+```powershell
+git add .
+git commit -m "Update portfolio"
+git push origin main
+```
+
+배포 설정은 저장소 **Settings → Pages → Build and deployment**에서 확인합니다. Source는 **Deploy from a branch**, Branch는 **main**, 폴더는 **/(root)**입니다.
+
+`.nojekyll`은 HTML·CSS·JavaScript와 정적 파일을 Jekyll 처리 없이 제공하도록 지정합니다. 모든 내부 리소스는 상대 경로를 사용하므로 `/Portfolio/` 하위 경로에서도 동작하며, 별도 빌드나 사용자 정의 배포 워크플로는 필요하지 않습니다.
 
 ## 내용 수정
 
