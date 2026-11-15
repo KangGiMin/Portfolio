@@ -2600,7 +2600,34 @@ h2 {
   font-size: 17px;
   letter-spacing: -2px;
 }
+/* Reveal content once as it enters the viewport; section backgrounds stay still. */
+.reveal-pending {
+  opacity: 0;
+  transform: translateY(28px);
+}
+.reveal-pending.is-visible {
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+.reveal-pending:focus-within {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+@media (max-width: 650px) {
+  .reveal-pending:not(.is-visible):not(:focus-within) {
+    transform: translateY(20px);
+  }
+}
 @media (prefers-reduced-motion: reduce) {
+  .reveal-pending {
+    opacity: 1;
+    transform: none;
+  }
   html {
     scroll-behavior: auto;
   }
